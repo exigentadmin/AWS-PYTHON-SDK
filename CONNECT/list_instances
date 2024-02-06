@@ -1,0 +1,13 @@
+import boto3
+import json
+import pprint
+import yaml
+
+
+#list all groups using client
+connect = boto3.client('connect') #C
+response = connect.list_instances()
+
+print(yaml.dump(response, default_flow_style=False))
+
+
