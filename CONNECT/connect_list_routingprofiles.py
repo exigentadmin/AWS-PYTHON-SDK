@@ -4,11 +4,16 @@ import json
 #list all groups using client
 connect = boto3.client('connect') #Connect
 response = connect.list_routing_profiles(
-    InstanceId='485e338c-966c-4d6c-a43a-d90c0895c8ae'
+    InstanceId='daf2d4c6-fd5e-42cd-bd15-41b217b9a48d'
 )
 
 #response from aws is a dict
-response_json = json.dumps(response, indent = 4) #convert dict to json
+response_json = json.dumps(
+     response,
+     indent=4,
+     sort_keys=True,
+     default=str
+ )  #convert dict to json
 
 #print(response)
 print(response_json)
