@@ -4,9 +4,9 @@ import json
 client = boto3.client('cognito-idp')
 
 response = client.list_groups(
-    UserPoolId='string',
-    Limit=60,
-    NextToken='string'
+    UserPoolId='us-east-1_p6oveW877',
+    Limit=60
+    # NextToken='string'
 )
 
 json_response = json.dumps(
