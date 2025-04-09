@@ -3,9 +3,8 @@ import json
 
 client = boto3.client('cognito-idp')
 
-response = client.list_user_pools(
-    #NextToken='string',
-    MaxResults=60
+response = client.describe_user_pool(
+    UserPoolId='us-east-1_p6oveW877'
 )
 
 json_response = json.dumps(

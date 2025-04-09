@@ -1,12 +1,11 @@
 import boto3
-import json
 
 client = boto3.client('cognito-idp')
 
-response = client.list_groups(
+response = client.admin_add_user_to_group(
     UserPoolId='us-east-1_p6oveW877',
-    Limit=60
-    # NextToken='string'
+    Username='PingFederate_',
+    GroupName='Salesforce'
 )
 
 json_response = json.dumps(

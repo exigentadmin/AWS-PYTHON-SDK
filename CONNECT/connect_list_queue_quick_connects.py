@@ -4,8 +4,8 @@ import json
 #list all groups using client
 connect = boto3.client('connect') #Connect
 response = connect.list_queue_quick_connects(
-    InstanceId='daf2d4c6-fd5e-42cd-bd15-41b217b9a48d',
-    QueueId='9e325054-ad63-420f-b985-329793ff6890'
+    InstanceId='67faf965-78f3-49d8-a49a-f98a2b061700',
+    QueueId='d2b13316-2a9c-4472-8b8c-9f5849dee51d'
 )
 
 qcsl_list = response['QuickConnectSummaryList'] #set variable equal to the QueueSummaryList list
