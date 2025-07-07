@@ -13,57 +13,21 @@ import json
 client = boto3.client('connect')
 
 response = client.update_hours_of_operation(
-    InstanceId='daf2d4c6-fd5e-42cd-bd15-41b217b9a48d',
-    HoursOfOperationId='f21537d8-0318-4eda-bf8d-eabe73defcd2',
-    Name='ECC-SA_RCM_PatientAccess_Onshore_HOO',
-    Description='ECC-SA_RCM_PatientAccess_Onshore_HOO',
-    TimeZone='US/Central',
+    InstanceId='string',
+    HoursOfOperationId='string',
+    Name='string',
+    Description='string',
+    TimeZone='string',
     Config=[
         {
-            Day': 'MONDAY',
+            'Day': 'SUNDAY'|'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY',
             'StartTime': {
-                'Hours': 6,
-                'Minutes': 30
+                'Hours': 123,
+                'Minutes': 123
             },
             'EndTime': {
-                'Hours': 19,
-                'Minutes': 00
-            },
-            'Day': 'TUESDAY',
-            'StartTime': {
-                'Hours': 6,
-                'Minutes': 30
-            },
-            'EndTime': {
-                'Hours': 19,
-                'Minutes': 00
-            },
-            'Day': 'WEDNESDAY',
-            'StartTime': {
-                'Hours': 6,
-                'Minutes': 30
-            },
-            'EndTime': {
-                'Hours': 19,
-                'Minutes': 00
-            },
-            'Day': 'THURSDAY',
-            'StartTime': {
-                'Hours': 6,
-                'Minutes': 30
-            },
-            'EndTime': {
-                'Hours': 19,
-                'Minutes': 00
-            },
-            'Day': 'FRIDAY',
-            'StartTime': {
-                'Hours': 6,
-                'Minutes': 30
-            },
-            'EndTime': {
-                'Hours': 19,
-                'Minutes': 00
+                'Hours': 123,
+                'Minutes': 123
             }
         },
     ]

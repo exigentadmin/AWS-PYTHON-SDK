@@ -10,67 +10,76 @@
 import boto3
 import json
 
+
+st_hrs = 6 # No leading zero
+st_mins = 00 #requires to digits
+et_hrs = 19
+et_mins = 00
+instance_id = '59834988-0e27-43c0-8589-cd66ebf3808f'
+name_hoo = 'ECC-SA_RCM_PatientAccess_Onshore'
+tz = 'US/Central'
+
 client = boto3.client('connect')
 
 response = client.create_hours_of_operation(
-    InstanceId='daf2d4c6-fd5e-42cd-bd15-41b217b9a48d',
-    Name='ECC-SA_RCM_AssuranceRM_Agreements_Onshore_HOO',
-    Description='ECC-SA_RCM_AssuranceRM_Agreements_Onshore_HOO',
-    TimeZone='US/Central',
+    InstanceId= instance_id,
+    Name= name_hoo + "_HOO",
+    Description= name_hoo + "_HOO",
+    TimeZone= tz,
     Config=[
         {
             'Day': 'MONDAY',
             'StartTime': {
-                'Hours': 7,
-                'Minutes': 30
+                'Hours': st_hrs,
+                'Minutes': st_mins
             },
             'EndTime': {
-                'Hours': 17,
-                'Minutes': 00
+                'Hours': et_hrs,
+                'Minutes': et_mins
             }
         },
         {
             'Day': 'TUESDAY',
             'StartTime': {
-                'Hours': 7,
-                'Minutes': 30
+                'Hours': st_hrs,
+                'Minutes': st_mins
             },
             'EndTime': {
-                'Hours': 17,
-                'Minutes': 00
+                'Hours': et_hrs,
+                'Minutes': et_mins
             }
         },
         {
             'Day': 'WEDNESDAY',
             'StartTime': {
-                'Hours': 7,
-                'Minutes': 30
+                'Hours': st_hrs,
+                'Minutes': st_mins
             },
             'EndTime': {
-                'Hours': 17,
-                'Minutes': 00
+                'Hours': et_hrs,
+                'Minutes': et_mins
             }
         },
         {
             'Day': 'THURSDAY',
             'StartTime': {
-                'Hours': 7,
-                'Minutes': 30
+                'Hours': st_hrs,
+                'Minutes': st_mins
             },
             'EndTime': {
-                'Hours': 17,
-                'Minutes': 00
+                'Hours': et_hrs,
+                'Minutes': et_mins
             }
         },
         {
             'Day': 'FRIDAY',
             'StartTime': {
-                'Hours': 7,
-                'Minutes': 30
+                'Hours': st_hrs,
+                'Minutes': st_mins
             },
             'EndTime': {
-                'Hours': 17,
-                'Minutes': 00
+                'Hours': et_hrs,
+                'Minutes': et_mins
             }        
         },
      ]
