@@ -1,0 +1,342 @@
+{
+  "MsgGroup": {
+    "S": "ECC_NETSOL_MEDNET_MN_Claims_Chat"
+  },
+  "Messages": {
+    "M": {
+      "10MinHoldExistingPrompt1": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>We are sorry,  all support analysts are still helping other customers. For help with support case . Please add a comment to the case and a support analyst will follow up with you soon. The chat will now end.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "10MinHoldExistingPrompt2": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>. Please add a comment to the case and a support analyst will follow up with you soon. The chat will now end.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "10MinHoldPrompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>We're sorry, all support analysts are still helping other customers. A support case has been created for this chat and a support analyst will follow-up with you soon. This chat will now end.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "closurePrompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Our team is currently offline. For assistance, please submit a new case or search our Learning & Resources library of resources.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "custMaxIdlePrompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>It looks like you've been inactive for a few minutes. If you still need help with this case, go to the Case Details page and initiate a new chat when you are ready, otherwise an agent will reach out to assist you in resolving the case. Thank you.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "disconnectPrompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>The associate has left the chat. If you still have any questions, please reply within 5 minutes.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "emergencyClosure": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Due to unforeseen circumstances, chat support is not available at this time.</speak>"
+              }
+            }
+          }
+        }
+      },
+      "emgQueuePrompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Oops! We have been disconnected. If you wish to continue this chat, please go to the case details page and select Existing Case in the chat window.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "endPrompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Thank you for chatting with customer support.  A record of this chat can be found by viewing the case details for case</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "greeting": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Thank you for contacting Optum</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "greetingExistingCase": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak> Hello!  Thank you for contacting customer support about case $.Attributes.caseNumber</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "greetingNewCase": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Hello!  Thank you for contacting customer support. Case $.Attributes.caseNumber has been created for this chat.</speak> "
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "greetingNewCase1": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>has been created for this chat.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "hold1Prompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Your estimated wait time is</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "hold2Prompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>All support analysts are assisting other customers. Please continue to wait for the next available support analyst. Thank you.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "holidayPrompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Chat Support is currently unavailable. Our office is closed in observance of the holiday."
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "motdPrompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>ECC hub  message of the day enabled"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "noAgentPrompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>We are sorry, all support analysts are still helping other customers. A support case has been created for this chat and a support analyst will follow up with you. This chat will now end.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "noAgentPrompt1": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak> has been created for this chat and a support analyst will follow up with you. This chat will now end.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "noAvlAgentPrompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>All support analysts are assisting other customers. Please continue to wait for the next available support analyst. Thank you.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "qxfer-noAgent": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Our team is currently offline, however a support agent will reach out to you as soon as they are available to follow-up on the assigned case. You do not need to create an additional case. Thank you.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "qxfer-offHours": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Our team is currently offline, however a support agent will reach out to you as soon as they are available to follow-up on the assigned case. You do not need to create an additional case. Thank you.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "qxfer-wrongChannel": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Oops! We are unable to transfer a voice to a chat queue. Please choose a queue that has voice support.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      },
+      "transWaitPrompt": {
+        "M": {
+          "en-US": {
+            "M": {
+              "Message": {
+                "S": "<speak>Please wait while we generate a link for the chat transcript.</speak>"
+              },
+              "Type": {
+                "S": "text"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
