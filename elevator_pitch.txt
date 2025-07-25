@@ -1,0 +1,49 @@
+Elevator pitch:
+
+My career in Call Center telephony has progressed from Cisco call center technologies to Amazon Connect and AWS cloud-based technologies. I have been responsible for migrating the Change Healthcare business units from Cisco technologies to Amazon Connect, migrating call flows, establishing SOP, and integrating third party applications such as Success KPI, Splunk, and Verint. I have been expanding my skill set to evolve into a new CI/CD DevOps model of deployment and management of the Call Center enterprise.
+
+•	Expanding skillset: I have acquired the AWS Certified Solutions Architect – Associate and Terraform Associate certifications.
+•	Improved uptime: I created Lambda functions for monitoring that increased visibility to errors and resulted in less downtime.
+•	Call Recording: I integrated Verint with AWS Connect enabling call recording and analysis of customer sentiment enabling increased customer satisfaction.
+
+Built thing,
+Thing does this,
+Company benefit.
+
+Specific things that created the largest impact.
+Make it easy to share with management.
+Elevator pitch
+ 
+If I have 30 seconds with the CEO of Optum what would you say to sell yourself for advancement in the company.
+ 
+ 
+Who I am.
+ 
+What have I done in my role.
+ 
+Should make sense to someone not in my field.
+ 
+Here is my skillset inside who I am.
+ 
+ 
+Describe career path, briefly. Cisco > Amazon Connect.
+ 
+DevOps 
+ 
+History > Progression > Future
+ 
+What would someone 
+ 
+Cross between cover letter and resume. What would someone from another part of the company that wanted to move you laterally want to know about you?
+ 
+Align existing build to new security standards.
+ 
+Move things form Gitlab to get hub
+ 
+Learned Python
+Larned Terraform
+
+Learned Gitlab / Git hub.
+ 
+ 
+Where I'm from, what I have done, where I am going.
