@@ -1,0 +1,28 @@
+{
+    "ContactFlow": {
+        "Arn": "arn:aws:connect:us-east-1:935157329549:instance/59834988-0e27-43c0-8589-cd66ebf3808f/contact-flow/9eb09f0a-d078-4410-bce0-7547564b2df8",
+        "Content": "{\"Version\":\"2019-10-30\",\"StartAction\":\"52957b62-920b-4bfc-b993-c471642d6aec\",\"Metadata\":{\"entryPointPosition\":{\"x\":20,\"y\":20},\"ActionMetadata\":{\"52957b62-920b-4bfc-b993-c471642d6aec\":{\"position\":{\"x\":226.4,\"y\":76},\"parameters\":{\"Text\":{\"useDynamic\":true}},\"useDynamic\":true},\"594095a2-a78f-4dd7-9951-b4d2f0f2018a\":{\"position\":{\"x\":475.2,\"y\":68.8},\"toCustomer\":true,\"fromCustomer\":true},\"63ba6cd4-0389-43b7-8b58-2fd7ffc7e406\":{\"position\":{\"x\":742.4,\"y\":64},\"dynamicMetadata\":{}},\"85e1b24f-9bef-49ac-a564-0d0e155c5218\":{\"position\":{\"x\":1021.6,\"y\":60}}}},\"Actions\":[{\"Parameters\":{\"Text\":\"$.Attributes.whisperPrompt\"},\"Identifier\":\"52957b62-920b-4bfc-b993-c471642d6aec\",\"Type\":\"MessageParticipant\",\"Transitions\":{\"NextAction\":\"594095a2-a78f-4dd7-9951-b4d2f0f2018a\"}},{\"Parameters\":{\"MediaStreamingState\":\"Enabled\",\"MediaStreamType\":\"Audio\",\"Participants\":[{\"ParticipantType\":\"Customer\",\"MediaDirections\":[\"To\",\"From\"]}]},\"Identifier\":\"594095a2-a78f-4dd7-9951-b4d2f0f2018a\",\"Type\":\"UpdateContactMediaStreamingBehavior\",\"Transitions\":{\"NextAction\":\"63ba6cd4-0389-43b7-8b58-2fd7ffc7e406\",\"Errors\":[{\"NextAction\":\"63ba6cd4-0389-43b7-8b58-2fd7ffc7e406\",\"ErrorType\":\"NoMatchingError\"}]}},{\"Parameters\":{\"LambdaFunctionARN\":\"arn:aws:lambda:us-east-1:935157329549:function:con-aws-ue1-prod-verint-recording-streaming\",\"InvocationTimeLimitSeconds\":\"8\",\"ResponseValidation\":{\"ResponseType\":\"STRING_MAP\"}},\"Identifier\":\"63ba6cd4-0389-43b7-8b58-2fd7ffc7e406\",\"Type\":\"InvokeLambdaFunction\",\"Transitions\":{\"NextAction\":\"85e1b24f-9bef-49ac-a564-0d0e155c5218\",\"Errors\":[{\"NextAction\":\"85e1b24f-9bef-49ac-a564-0d0e155c5218\",\"ErrorType\":\"NoMatchingError\"}]}},{\"Parameters\":{},\"Identifier\":\"85e1b24f-9bef-49ac-a564-0d0e155c5218\",\"Type\":\"EndFlowExecution\",\"Transitions\":{}}]}",
+        "Description": "Assurance Clearance and Exchange Agent Whisper",
+        "Id": "9eb09f0a-d078-4410-bce0-7547564b2df8",
+        "Name": "ECC-MEDNET_EXC-CLR-AS_Whisper",
+        "State": "ACTIVE",
+        "Status": "PUBLISHED",
+        "Tags": {},
+        "Type": "AGENT_WHISPER"
+    },
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "access-control-allow-origin": "*",
+            "connection": "keep-alive",
+            "content-length": "2426",
+            "content-type": "application/json",
+            "date": "Fri, 25 Jul 2025 01:02:45 GMT",
+            "x-amz-apigw-id": "OPakWF-HIAMETpA=",
+            "x-amzn-requestid": "66b1505c-04ef-4dbb-9920-064e21fdf15d",
+            "x-amzn-trace-id": "Root=1-6882d7b5-7882822a737045146a273550"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "66b1505c-04ef-4dbb-9920-064e21fdf15d",
+        "RetryAttempts": 0
+    }
+}
