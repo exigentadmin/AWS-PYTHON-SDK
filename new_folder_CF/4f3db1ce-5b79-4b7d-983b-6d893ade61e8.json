@@ -1,0 +1,28 @@
+{
+    "ContactFlow": {
+        "Arn": "arn:aws:connect:us-east-1:935157329549:instance/59834988-0e27-43c0-8589-cd66ebf3808f/contact-flow/4f3db1ce-5b79-4b7d-983b-6d893ade61e8",
+        "Content": "{\"Version\":\"2019-10-30\",\"StartAction\":\"8d425b68-5fa8-42b2-b890-58489a1a8829\",\"Metadata\":{\"entryPointPosition\":{\"x\":14.4,\"y\":14.4},\"ActionMetadata\":{\"8d425b68-5fa8-42b2-b890-58489a1a8829\":{\"position\":{\"x\":200.8,\"y\":272},\"dynamicParams\":[]},\"7fb0d031-8260-4570-ae53-459ff217973d\":{\"position\":{\"x\":720,\"y\":-87.2},\"parameters\":{\"Attributes\":{\"temp\":{\"useDynamic\":true}}},\"dynamicParams\":[\"temp\"]},\"535e4a66-4f42-4a87-a0a4-dae6eb029f16\":{\"position\":{\"x\":448.8,\"y\":274.4},\"parameters\":{\"Text\":{\"useDynamic\":true}},\"useDynamic\":true},\"ae8db514-52bc-4eb0-b8ad-fda4dd6bf214\":{\"position\":{\"x\":1475.2,\"y\":-72}},\"6ce952d0-fa47-4b4e-a481-0f8f173461b6\":{\"position\":{\"x\":978.4,\"y\":-84},\"dynamicParams\":[]},\"c057c8ac-192e-462b-8778-2dc0eb788fc1\":{\"position\":{\"x\":1216,\"y\":-86.4},\"parameters\":{\"ContactFlowId\":{\"displayName\":\"ECC-NETSOL_MedNet_Enrollments_Inbound\"}},\"ContactFlow\":{\"text\":\"ECC-NETSOL_MedNet_Enrollments_Inbound\"}}},\"Annotations\":[]},\"Actions\":[{\"Parameters\":{\"Attributes\":{\"targetGroup\":\"ECC-MEDNET_EXC-CLR-AS_Enrollment\"}},\"Identifier\":\"8d425b68-5fa8-42b2-b890-58489a1a8829\",\"Type\":\"UpdateContactAttributes\",\"Transitions\":{\"NextAction\":\"535e4a66-4f42-4a87-a0a4-dae6eb029f16\",\"Errors\":[{\"NextAction\":\"535e4a66-4f42-4a87-a0a4-dae6eb029f16\",\"ErrorType\":\"NoMatchingError\"}]}},{\"Parameters\":{\"Attributes\":{\"lastJourneyPoint\":\"Transfer to Enrollment\",\"temp\":\"$.Attributes.journeyMap\",\"journeyMap\":\"$.Attributes.temp | $.Attributes.lastJourneyPoint\"}},\"Identifier\":\"7fb0d031-8260-4570-ae53-459ff217973d\",\"Type\":\"UpdateContactAttributes\",\"Transitions\":{\"NextAction\":\"6ce952d0-fa47-4b4e-a481-0f8f173461b6\",\"Errors\":[{\"NextAction\":\"6ce952d0-fa47-4b4e-a481-0f8f173461b6\",\"ErrorType\":\"NoMatchingError\"}]}},{\"Parameters\":{\"Text\":\"$.Attributes.transfer\"},\"Identifier\":\"535e4a66-4f42-4a87-a0a4-dae6eb029f16\",\"Type\":\"MessageParticipant\",\"Transitions\":{\"NextAction\":\"7fb0d031-8260-4570-ae53-459ff217973d\",\"Errors\":[{\"NextAction\":\"7fb0d031-8260-4570-ae53-459ff217973d\",\"ErrorType\":\"NoMatchingError\"}]}},{\"Parameters\":{},\"Identifier\":\"ae8db514-52bc-4eb0-b8ad-fda4dd6bf214\",\"Type\":\"DisconnectParticipant\",\"Transitions\":{}},{\"Parameters\":{\"Attributes\":{\"intXfer\":\"YES\",\"status\":\"Call Flow Transfer: ECC-MEDNET_EXC-CLR-AS_Enrollment\"}},\"Identifier\":\"6ce952d0-fa47-4b4e-a481-0f8f173461b6\",\"Type\":\"UpdateContactAttributes\",\"Transitions\":{\"NextAction\":\"c057c8ac-192e-462b-8778-2dc0eb788fc1\",\"Errors\":[{\"NextAction\":\"c057c8ac-192e-462b-8778-2dc0eb788fc1\",\"ErrorType\":\"NoMatchingError\"}]}},{\"Parameters\":{\"ContactFlowId\":\"arn:aws:connect:us-east-1:935157329549:instance/59834988-0e27-43c0-8589-cd66ebf3808f/contact-flow/98b0b8e0-cefd-45c0-a3fc-a766bf994ed2\"},\"Identifier\":\"c057c8ac-192e-462b-8778-2dc0eb788fc1\",\"Type\":\"TransferToFlow\",\"Transitions\":{\"NextAction\":\"ae8db514-52bc-4eb0-b8ad-fda4dd6bf214\",\"Errors\":[{\"NextAction\":\"ae8db514-52bc-4eb0-b8ad-fda4dd6bf214\",\"ErrorType\":\"NoMatchingError\"}]}}]}",
+        "Description": "Assurance Clearance and Exchange Main Enrollment",
+        "Id": "4f3db1ce-5b79-4b7d-983b-6d893ade61e8",
+        "Name": "ECC-MEDNET_EXC-CLR-AS_Enrollment",
+        "State": "ACTIVE",
+        "Status": "PUBLISHED",
+        "Tags": {},
+        "Type": "CONTACT_FLOW"
+    },
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "access-control-allow-origin": "*",
+            "connection": "keep-alive",
+            "content-length": "3739",
+            "content-type": "application/json",
+            "date": "Fri, 25 Jul 2025 01:02:47 GMT",
+            "x-amz-apigw-id": "OPakqGE3IAMEsOQ=",
+            "x-amzn-requestid": "f8c2f0f0-8998-4a4e-a98a-63ad28ee9919",
+            "x-amzn-trace-id": "Root=1-6882d7b7-092e727f0b4befc36b015ebb"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "f8c2f0f0-8998-4a4e-a98a-63ad28ee9919",
+        "RetryAttempts": 0
+    }
+}

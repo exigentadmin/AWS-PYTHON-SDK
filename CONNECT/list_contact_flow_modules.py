@@ -18,7 +18,14 @@ print(type(cfs_list))
 
 for i in cfs_list:
     if key in i['Name']:
-        print(i['Name'], i['Arn'])
+        length = len(i['Arn'])
+        arn_pure = (i['Arn'])[length - 36:]
+        # print(i['Name'], arn_pure)
+        print(f"\"{arn_pure}\",")
+
+# for i in cfs_list:
+#     if key in i['Name']:
+#         print(i['Name'], i['Arn'])
 
 # for key, value in cfs_list.items():
 #     print(key," ",value)
