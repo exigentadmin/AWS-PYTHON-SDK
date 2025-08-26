@@ -5,7 +5,7 @@ from boto3.dynamodb.conditions import Key
 client = boto3.resource('dynamodb')
 table = client.Table('ivr_flags')
 response = table.query(
-    KeyConditionExpression=Key('LOB').eq('Pharmacy')
+    KeyConditionExpression=Key('LOB').eq('Main')
 )
 
 response_json = json.dumps(response, indent = 4)
