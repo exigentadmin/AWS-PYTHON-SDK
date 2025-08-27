@@ -5,8 +5,11 @@ import logging
 from boto3.dynamodb.conditions import Key
 
 # Set logging level to INFO for boto3
-logging.getLogger('boto3').setLevel(logging.ERROR)
+logging.getLogger('boto3').setLevel(logging.DEBUG)
 
+# Initialize the boto clients in the global scope
+dynamo_client = boto3.resource('dynamodb')
+connect_client = boto3.client('connect')
 
 #parse data from event
 def parse_data_from_event(event):
@@ -27,10 +30,9 @@ def parse_data_from_event(event):
         return instance_id, contact_id, dynamodb_key
 
 
-def retreive_messages(key):
+def retreive_messages(key, dynamo_client):
     try:                
-        client = boto3.resource('dynamodb')
-        table = client.Table(os.environ['table_name'])
+        table = dynamo_client.Table(os.environ['table_name'])
         response = table.query(
                 KeyConditionExpression=Key(os.environ['partition_key']).eq(key)
             )
@@ -43,13 +45,13 @@ def retreive_messages(key):
     return response["Items"][0]["prompts"]
       
 
-def update_contact_attributes(instance_id, contact_id, attributes):
+def update_contact_attributes(instance_id, contact_id, attributes, connect_client):
     try:
+        print(f"Start update contact attributes")
         print(instance_id)
         print(contact_id)
         print(attributes)
-        client = boto3.client('connect')
-        response = client.update_contact_attributes(   
+        response = connect_client.update_contact_attributes(   
             InitialContactId=contact_id,
             InstanceId=instance_id,
             Attributes= attributes
@@ -61,7 +63,7 @@ def update_contact_attributes(instance_id, contact_id, attributes):
         print(e)
         raise e
     
-    print("Update success")
+    print(f"Update success: {response}")
     return response
 
 
@@ -73,11 +75,9 @@ def lambda_handler(event, context):
                 # retrive arn and contact id from event
                 instance_id, contact_id, dynamodb_key = parse_data_from_event(event)
                 #retrive messages from dynamodb
-                messages = retreive_messages(dynamodb_key)
-                print("Retreived messages: ", messages)
+                messages = retreive_messages(dynamodb_key, dynamo_client)
                 # send messages to the contact flow as attributes
-                update = update_contact_attributes(instance_id, contact_id, messages)
-                print("Update attribute response :", update)
+                update = update_contact_attributes(instance_id, contact_id, messages, connect_client)
             except Exception as e:
                  print(f"Update : {update}")
 
