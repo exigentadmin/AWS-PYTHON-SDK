@@ -3,10 +3,22 @@ import json
 import pprint
 import yaml
 
+
+bucket = input("Enter bucket name: ")
+
 client = boto3.client('s3')
 
 response = client.list_objects(
-    Bucket='exigent-tech-test-lambda-trigger-bucket'
+    Bucket=bucket
 )
 
-print(yaml.dump(response, default_flow_style=False))
+#print(yaml.dump(response, default_flow_style=False))
+
+response_json = json.dumps(
+     response,
+     indent=4,
+     sort_keys=True,
+     default=str
+ ) #convert dict to json
+
+print(response_json)
