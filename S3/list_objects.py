@@ -14,11 +14,12 @@ response = client.list_objects(
 
 #print(yaml.dump(response, default_flow_style=False))
 
+#convert dict to json
 response_json = json.dumps(
      response,
      indent=4,
      sort_keys=True,
      default=str
- ) #convert dict to json
+ ) 
 
 print(response_json)

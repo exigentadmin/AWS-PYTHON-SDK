@@ -18,7 +18,7 @@ response_json = json.dumps(
      indent=4,
      sort_keys=True,
      default=str
- ) 
+ )   
 
 print(response_json)
 #print(type(response_json))

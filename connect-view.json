@@ -1,0 +1,35 @@
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "access-control-allow-origin": "*",
+            "connection": "keep-alive",
+            "content-length": "2728",
+            "content-type": "application/json",
+            "date": "Thu, 18 Sep 2025 14:53:27 GMT",
+            "x-amz-apigw-id": "RGl0KEpnIAMEmBQ=",
+            "x-amzn-requestid": "f2faf09a-f0c7-46d1-b293-30a2173cc3b4",
+            "x-amzn-trace-id": "Root=1-68cc1ce7-703fbb7917d8b1ed20feb9c1"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "f2faf09a-f0c7-46d1-b293-30a2173cc3b4",
+        "RetryAttempts": 0
+    },
+    "View": {
+        "Arn": "arn:aws:connect:us-east-1:035685865751:instance/8722cf5c-8ba1-4a89-bb2c-f55d98a0c5dc/view/80971164-5786-4b23-a0cd-d9569d3f8c8f:$LATEST",
+        "Content": {
+            "Actions": [
+                "Date Provided"
+            ],
+            "InputSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[],\"$defs\":{\"ViewCondition\":{\"$id\":\"/view/condition\",\"type\":\"object\",\"patternProperties\":{\"^(MoreThan|LessThan|NotEqual|Equal|Include)$\":{\"type\":\"object\",\"properties\":{\"ElementByKey\":{\"type\":\"string\"},\"ElementByValue\":{\"anyOf\":[{\"type\":\"number\"},{\"type\":\"string\"}]}},\"additionalProperties\":false},\"^(AndConditions|OrConditions)$\":{\"type\":\"array\",\"items\":{\"$ref\":\"/view/condition\"}}},\"additionalProperties\":false}}}",
+            "Template": "{\"Body\":[{\"Type\":\"Header\",\"_id\":\"Header_1755750690026\",\"Configuration\":{\"Style\":{\"--header-h3-color\":\"#901688\"}},\"Props\":{\"variant\":\"h3\",\"description\":\"\"},\"Content\":[\"Please provide a date\"]},{\"Type\":\"Form\",\"_id\":\"Form_1755750722937\",\"Configuration\":{\"Layout\":{\"Align\":\"center\"},\"Style\":{\"--form-border-color\":\"#901688\"}},\"Props\":{\"HideBorder\":false},\"Content\":[{\"Type\":\"DatePicker\",\"_id\":\"datePicker\",\"Props\":{\"Label\":\"Date\",\"DefaultValue\":\"\",\"HelperText\":\"\",\"Required\":true,\"DateFormat\":\"MM-dd-yyyy\",\"Name\":\"date\"},\"Content\":[]},{\"Type\":\"TemplateStringComponent\",\"_id\":\"TemplateStringComponent_1755750751994\",\"Props\":{\"TemplateString\":\"<hr />\"},\"Content\":[]},{\"Type\":\"SubmitButton\",\"_id\":\"SubmitButton_1755750722937\",\"Configuration\":{\"Style\":{\"--button-border-color--secondary\":\"#901688\"}},\"Props\":{\"Variant\":\"normal\",\"Label\":\"Live Agent\",\"Action\":\"Date Provided\"},\"Content\":[]}]}],\"Head\":{\"Configuration\":{\"Layout\":{\"Columns\":[12],\"Align\":\"center\"},\"Style\":{\"--primary-color-200\":\"#bb61ad\",\"--primary-color-100\":\"#cf8ec5\",\"--primary-color-50\":\"#e2bbdb\",\"--primary-color-400\":\"#9c1a8d\",\"--primary-color-300\":\"#ac3e9d\",\"--primary-color-900\":\"#54036a\",\"--primary-color-600\":\"#7f0f81\",\"--primary-color-500\":\"#901688\",\"--primary-color-800\":\"#54036a\",\"--primary-color-700\":\"#700a79\"}},\"Title\":\"PSA_Calendar_View\"}}"
+        },
+        "CreatedTime": "2025-09-17 16:59:59-04:00",
+        "Id": "80971164-5786-4b23-a0cd-d9569d3f8c8f",
+        "LastModifiedTime": "2025-09-17 16:59:59-04:00",
+        "Name": "PSA_Calendar_View",
+        "Status": "PUBLISHED",
+        "Tags": {},
+        "Type": "CUSTOMER_MANAGED",
+        "ViewContentSha256": "5c126b794bcb3a4e5bf11b1bde48dc92f1005e6dc495dac422e61fca0c704a61"
+    }
+}
