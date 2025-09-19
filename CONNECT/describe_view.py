@@ -2,7 +2,7 @@
 # Dale Murdock 
 # 2025-09-18
 #
-# Describe view
+# Describe View
 ######################################################################################
 
 import boto3
@@ -12,7 +12,7 @@ from dotenv import find_dotenv, load_dotenv
 
 load_dotenv() # This loads the variables from the .env file
 
-instance_id =os.getenv("INSTANCE_ID")
+instance_id =os.getenv("INSTANCE_ID_DEV")
 
 view_id = "80971164-5786-4b23-a0cd-d9569d3f8c8f"
 
