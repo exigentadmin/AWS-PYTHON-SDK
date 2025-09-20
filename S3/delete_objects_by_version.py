@@ -1,5 +1,9 @@
-# This will get a list of objects by version from a bucket then delete all versions of objects
-# This is useful when deleting an S3 bucket in Terraform
+######################################################################################
+# Dale Murdock 
+# 2025-09-19
+#
+# This will delete objects by version from an S3 bucket.
+######################################################################################
 
 import boto3
 
