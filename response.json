@@ -1,0 +1,57 @@
+{
+    "Images": [
+        {
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/xvda",
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "Encrypted": false,
+                        "Iops": 3000,
+                        "SnapshotId": "snap-0e8ae436bb016efb5",
+                        "Throughput": 125,
+                        "VolumeSize": 8,
+                        "VolumeType": "gp3"
+                    }
+                }
+            ],
+            "BootMode": "uefi-preferred",
+            "CreationDate": "2025-09-10T19:09:27.000Z",
+            "DeprecationTime": "2025-12-09T19:09:00.000Z",
+            "Description": "Amazon Linux 2023 AMI 2023.8.20250915.0 x86_64 HVM kernel-6.1",
+            "EnaSupport": true,
+            "FreeTierEligible": true,
+            "Hypervisor": "xen",
+            "ImageId": "ami-08982f1c5bf93d976",
+            "ImageLocation": "amazon/al2023-ami-2023.8.20250915.0-kernel-6.1-x86_64",
+            "ImageOwnerAlias": "amazon",
+            "ImageType": "machine",
+            "ImdsSupport": "v2.0",
+            "Name": "al2023-ami-2023.8.20250915.0-kernel-6.1-x86_64",
+            "OwnerId": "137112412989",
+            "PlatformDetails": "Linux/UNIX",
+            "Public": true,
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "State": "available",
+            "UsageOperation": "RunInstances",
+            "VirtualizationType": "hvm"
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "cache-control": "no-cache, no-store",
+            "content-length": "1558",
+            "content-type": "text/xml;charset=UTF-8",
+            "date": "Sun, 21 Sep 2025 19:30:28 GMT",
+            "server": "AmazonEC2",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-amzn-requestid": "3ddd23df-1eb4-46ba-a48d-da54eaeaf689"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "3ddd23df-1eb4-46ba-a48d-da54eaeaf689",
+        "RetryAttempts": 0
+    }
+}
